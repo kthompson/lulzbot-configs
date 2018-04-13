@@ -9,7 +9,7 @@
     <diameter>0.5</diameter>
     <autoWidth>0</autoWidth>
     <width>0.5</width>
-    <extrusionMultiplier>0.85</extrusionMultiplier>
+    <extrusionMultiplier>0.88</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.7</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -149,7 +149,7 @@
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>G91 ; relative movements,G1 F150 ; slow Z rate,G1 Z5 ; Z up 5mm,G90 ; back to absolute,,M104 S0 ; turn off extruder,M140 S0 ; turn off bed,G28 X0 ; home X axis,M84 ; disable motors</endingGcode>
+  <endingGcode>G91 ; relative movements,G1 F150 ; slow Z rate,G1 Z30 ; Z up 5mm,G1 F1500 ; speed up y rate,G1 Y100 ; kick out build plate,G90 ; back to absolute,,M104 S0 ; turn off extruder,M140 S0 ; turn off bed,G28 X0 ; home X axis,M84 ; disable motors</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
@@ -209,7 +209,7 @@
   <autoConfigureMaterial name="ABS">
     <globalExtruderTemperature>240</globalExtruderTemperature>
     <globalBedTemperature>110</globalBedTemperature>
-    <globalExtrusionMultiplier>0.85</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.88</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="3" speed="60"/>
     </fanSpeed>
