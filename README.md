@@ -15,12 +15,21 @@ Print 20mm calibration cube with 2 shells, zero infill, no top or bottom layers.
 
 Take average of widths around the shell three measurements on each side for 12 values. Adjust extrusion multiplier accordingly.
 
+> new extrusion width = (2*nozzle width) * (current extrusion width)/(average measured shell width)
 
+## Full calibration cube
+
+Check for dimensions of 20x20mm. Check top layer to make sure no scaring etc.
+
+## Retraction/Bridging Calibration
+
+TODO
 
 # Useful links
 
-https://www.simplify3d.com/support/print-quality-troubleshooting/
-https://www.thingiverse.com/thing:52946
+* https://www.simplify3d.com/support/print-quality-troubleshooting/
+* https://www.thingiverse.com/thing:52946
+* http://reprap.org/wiki/G-code
 
 
 
