@@ -255,4 +255,12 @@
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
   </autoConfigureQuality>
+  <autoConfigureQuality name="Line Width Test">
+    <layerHeight>0.2</layerHeight>
+    <topSolidLayers>0</topSolidLayers>
+    <bottomSolidLayers>0</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>0</infillPercentage>
+    <supportInfillPercentage>30</supportInfillPercentage>
+  </autoConfigureQuality>
 </profile>
