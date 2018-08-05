@@ -19,6 +19,8 @@ Take average of widths around the shell three measurements on each side for 12 v
 
 ## Full calibration cube
 
+If top layer has gaps, increase `Infill - Overlap Percentage`
+
 Check for dimensions of 20x20mm. Check top layer to make sure no scaring etc.
 
 ## Retraction/Bridging Calibration
@@ -42,3 +44,9 @@ M104 S[extruder0_temperature] T0 ; heat t0 to 240
 M190 S110; [bed0_temperature]
 M109 S[extruder0_temperature]
 ```
+
+# Flow rate
+
+> Throughput = Layer Height * Layer Width * Printing Speed
+
+Estimated max throughput is around 8-10 mm^3/s
