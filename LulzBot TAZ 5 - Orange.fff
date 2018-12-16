@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="LulzBot TAZ 5 - Orange" version="2018-04-10 17:58:44" app="S3D-Software 4.0.1">
+<profile name="LulzBot TAZ 5 - Blue" version="2018-08-05 11:15:27" app="S3D-Software 4.0.1">
   <baseProfile>LulzBot TAZ 5</baseProfile>
   <printMaterial>ABS</printMaterial>
   <printQuality>Medium</printQuality>
@@ -7,9 +7,9 @@
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.5</diameter>
-    <autoWidth>0</autoWidth>
-    <width>0.5</width>
-    <extrusionMultiplier>0.85</extrusionMultiplier>
+    <autoWidth>1</autoWidth>
+    <width>0.6</width>
+    <extrusionMultiplier>0.99</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>4.7</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -21,8 +21,8 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.3</layerHeight>
-  <topSolidLayers>5</topSolidLayers>
+  <layerHeight>0.25</layerHeight>
+  <topSolidLayers>6</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
@@ -45,7 +45,7 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>3</skirtOutlines>
+  <skirtOutlines>5</skirtOutlines>
   <skirtOffset>6</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
@@ -62,15 +62,15 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>30</infillPercentage>
-  <outlineOverlapPercentage>25</outlineOverlapPercentage>
-  <infillExtrusionWidthPercentage>240</infillExtrusionWidthPercentage>
+  <infillPercentage>20</infillPercentage>
+  <outlineOverlapPercentage>15</outlineOverlapPercentage>
+  <infillExtrusionWidthPercentage>90</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <internalInfillAngles>45,-45</internalInfillAngles>
   <overlapInternalInfillAngles>0</overlapInternalInfillAngles>
   <externalInfillAngles>45,-45</externalInfillAngles>
-  <generateSupport>1</generateSupport>
+  <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -84,7 +84,7 @@
   <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
   <supportType>0</supportType>
   <supportGridSpacing>4</supportGridSpacing>
-  <maxOverhangAngle>45</maxOverhangAngle>
+  <maxOverhangAngle>40</maxOverhangAngle>
   <supportAngles>0</supportAngles>
   <temperatureController name="Primary Extruder">
     <temperatureNumber>0</temperatureNumber>
@@ -92,7 +92,7 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="240"/>
+    <setpoint layer="1" temperature="243"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>1</temperatureNumber>
@@ -100,9 +100,10 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="110"/>
+    <setpoint layer="1" temperature="115"/>
   </temperatureController>
   <fanSpeed>
+    <setpoint layer="1" speed="0"/>
     <setpoint layer="3" speed="60"/>
   </fanSpeed>
   <blipFanToFullPower>1</blipFanToFullPower>
@@ -112,7 +113,7 @@
   <increaseFanForCooling>0</increaseFanForCooling>
   <minFanLayerTime>45</minFanLayerTime>
   <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
-  <increaseFanForBridging>0</increaseFanForBridging>
+  <increaseFanForBridging>1</increaseFanForBridging>
   <bridgingFanSpeed>100</bridgingFanSpeed>
   <use5D>1</use5D>
   <relativeEdistances>0</relativeEdistances>
@@ -123,7 +124,7 @@
   <applyToolheadOffsets>0</applyToolheadOffsets>
   <gcodeXoffset>0</gcodeXoffset>
   <gcodeYoffset>0</gcodeYoffset>
-  <gcodeZoffset>0</gcodeZoffset>
+  <gcodeZoffset>-0.09</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>0</machineTypeOverride>
   <strokeXoverride>298</strokeXoverride>
@@ -142,32 +143,32 @@
   <overrideFirmwareConfiguration>1</overrideFirmwareConfiguration>
   <firmwareTypeOverride>RepRap (Marlin/Repetier/Sprinter)</firmwareTypeOverride>
   <GPXconfigOverride>r2</GPXconfigOverride>
-  <baudRateOverride>115200</baudRateOverride>
+  <baudRateOverride>250000</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride>LulzBot_TAZ3.stl</printerModelsOverride>
-  <startingGcode>G28 ; home all axes,M104 S240 T0 ; heat t0 to 250</startingGcode>
+  <startingGcode>G28 ; home all axes</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>G91 ; relative movements,G1 F150 ; slow Z rate,G1 Z5 ; Z up 5mm,G1 Y100 ; Z up 5mm,G90 ; back to absolute,,M104 S0 ; turn off extruder,M140 S0 ; turn off bed,G28 X0 ; home X axis,M84 ; disable motors</endingGcode>
+  <endingGcode>G91 ; relative movements,G1 F150 ; slow Z rate,G1 Z5 ; Z up 5mm,G1 F1500 ; speed up Y rate,G1 Y100 ; Y out 100mm,G90 ; back to absolute,,M104 S0 ; turn off extruder,M140 S0 ; turn off bed,G28 X0 ; home X axis,M84 ; disable motors</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing></postProcessing>
   <defaultSpeed>3600</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
-  <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
+  <solidInfillUnderspeed>0.6</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
   <rapidXYspeed>4800</rapidXYspeed>
   <rapidZspeed>1000</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
   <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
-  <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
+  <bridgingSpeedMultiplier>0.8</bridgingSpeedMultiplier>
   <useFixedBridgingAngle>0</useFixedBridgingAngle>
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
-  <filamentDiameters>3|3|3|3|3|3</filamentDiameters>
+  <filamentDiameters>2.81|3|3|3|3|3</filamentDiameters>
   <filamentPricesPerKg>22|46|46|46|46|46</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
@@ -179,7 +180,7 @@
   <robustSlicing>1</robustSlicing>
   <mergeAllIntoSolid>0</mergeAllIntoSolid>
   <onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
-  <retractBetweenLayers>1</retractBetweenLayers>
+  <retractBetweenLayers>0</retractBetweenLayers>
   <useRetractionMinTravel>0</useRetractionMinTravel>
   <retractionMinTravel>3</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
@@ -189,7 +190,7 @@
   <toolChangeRetractionDistance>12</toolChangeRetractionDistance>
   <toolChangeExtraRestartDistance>-0.5</toolChangeExtraRestartDistance>
   <toolChangeRetractionSpeed>600</toolChangeRetractionSpeed>
-  <externalThinWallType>1</externalThinWallType>
+  <externalThinWallType>0</externalThinWallType>
   <internalThinWallType>2</internalThinWallType>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <singleExtrusionMinLength>1</singleExtrusionMinLength>
@@ -207,10 +208,11 @@
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
-    <globalExtruderTemperature>240</globalExtruderTemperature>
-    <globalBedTemperature>110</globalBedTemperature>
-    <globalExtrusionMultiplier>0.85</globalExtrusionMultiplier>
+    <globalExtruderTemperature>243</globalExtruderTemperature>
+    <globalBedTemperature>115</globalBedTemperature>
+    <globalExtrusionMultiplier>0.99</globalExtrusionMultiplier>
     <fanSpeed>
+      <setpoint layer="1" speed="0"/>
       <setpoint layer="3" speed="60"/>
     </fanSpeed>
   </autoConfigureMaterial>
@@ -240,11 +242,11 @@
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.3</layerHeight>
-    <topSolidLayers>5</topSolidLayers>
+    <layerHeight>0.25</layerHeight>
+    <topSolidLayers>6</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>30</infillPercentage>
+    <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
