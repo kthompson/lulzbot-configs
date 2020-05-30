@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="LulzBot TAZ 5 - Orange" version="2018-08-05 11:15:27" app="S3D-Software 4.1.1">
+<profile name="LulzBot TAZ 5 - Orange" version="2019-09-15 16:02:55" app="S3D-Software 4.1.1">
   <baseProfile>LulzBot TAZ 5</baseProfile>
   <printMaterial>ABS</printMaterial>
   <printQuality>Medium</printQuality>
@@ -9,7 +9,7 @@
     <diameter>0.5</diameter>
     <autoWidth>1</autoWidth>
     <width>0.6</width>
-    <extrusionMultiplier>0.99</extrusionMultiplier>
+    <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>4.7</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -63,7 +63,7 @@
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>20</infillPercentage>
-  <outlineOverlapPercentage>15</outlineOverlapPercentage>
+  <outlineOverlapPercentage>10</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>90</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
@@ -164,7 +164,7 @@
   <useFixedBridgingAngle>0</useFixedBridgingAngle>
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
-  <filamentDiameters>2.81|3|3|3|3|3</filamentDiameters>
+  <filamentDiameters>2.97|3|3|3|3|3</filamentDiameters>
   <filamentPricesPerKg>22|46|46|46|46|46</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
@@ -206,7 +206,7 @@
   <autoConfigureMaterial name="ABS">
     <globalExtruderTemperature>243</globalExtruderTemperature>
     <globalBedTemperature>115</globalBedTemperature>
-    <globalExtrusionMultiplier>0.99</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.9</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="3" speed="60"/>
